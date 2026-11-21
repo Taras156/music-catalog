@@ -1,9 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f4f6f8;
   font-family: "Roboto", sans-serif;
   color: #222222;
+}
+
+main {
+  width: 80%;
+  max-width: 900px;
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 h1 {
@@ -29,4 +41,19 @@ table {
 
 .description {
   color: darkgreen;
+}
+
+
+header {
+  height: 140px;
+  min-height: 120px;
+  max-height: 160px;
+  position: relative;
+}
+
+
+nav {
+    position: absolute;
+    top: 10px;
+    right: 20px;
 }
