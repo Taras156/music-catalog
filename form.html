@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Регистрация — Музыкальный каталог</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Каталог музыкальных композиций</h1>
+
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="form.html">Регистрация</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Регистрация пользователя</h2>
+
+      <form method="post" onsubmit="event.preventDefault()">
+        <fieldset>
+          <legend>Личная информация</legend>
+          <label for="username">Ваше имя:</label>
+
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Например, Максим"
+            required
+          />
+
+          <p>
+            <label for="birthdate">Дата рождения:</label>
+
+            <input type="date" id="birthdate" name="birthdate" required />
+          </p>
+
+          <p>Пол:</p>
+
+          <label for="male">Мужской</label>
+          <input type="radio" id="male" name="gender" value="male" />
+
+          <label for="female">Женский</label>
+          <input type="radio" id="female" name="gender" value="female" />
+
+          <p>
+            <label for="password">Пароль:</label>
+
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Введите пароль"
+              autocomplete="new-password"
+              required
+            />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Контактные данные</legend>
+
+          <p>
+            <label for="email">Электронная почта:</label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@mail.ru"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="phone">Телефон:</label>
+
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+79991234567"
+              pattern="\+7[0-9]{10}"
+              title="Введите +7 и 10 цифр без пробелов"
+            />
+          </p>
+
+          <p>Удобное время для связи:</p>
+
+          <label for="morning">Утро</label>
+          <input
+            type="radio"
+            id="morning"
+            name="contact_time"
+            value="morning"
+          />
+
+          <label for="day">День</label>
+          <input type="radio" id="day" name="contact_time" value="day" />
+
+          <label for="evening">Вечер</label>
+          <input
+            type="radio"
+            id="evening"
+            name="contact_time"
+            value="evening"
+          />
+
+          <label for="night">Ночь</label>
+          <input type="radio" id="night" name="contact_time" value="night" />
+        </fieldset>
+
+        
+<button type="submit">Зарегистрироваться</button>
+</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>2026 Каталог музыкальных композиций. Учебный проект.</p>
+
+      <p>
+        <a href="mailto:">Написать письмо</a>
+      </p>
+
+      <p>
+        <a href="tel:+79990000000">Позвонить</a>
+      </p>
+    </footer>
+  </body>
+</html>
