@@ -57,3 +57,10 @@ nav {
     top: 10px;
     right: 20px;
 }
+
+figure img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    object-position: center center
+}
