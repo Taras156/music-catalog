@@ -136,6 +136,11 @@ nav a:active {
     color: green;
 }
 
+nav a:focus {
+    outline: 2px solid orange;
+    outline-offset: 3px;
+}
+
 
 
 input:focus {
